@@ -18,6 +18,11 @@
             <li><a href="#Variable scope">Variable scope</a></li>
             <li><a href="#Global variables">Global variables</a></li>
             <li><a href="#Constants">Constants</a></li>
+            <li><a href="#Data types">Data types</a></li>
+            <li><a href="#if...else statement">if...else statement</a></li>
+            <li><a href="#while statement">while statement</a></li>
+            <li><a href="#Function declarations">Function declarations</a></li>
+            <li><a href="#Reference">Reference</a></li>
         </ul>
     </nav>
     Introduction
@@ -84,24 +89,24 @@ Global variables are in fact properties of the global object. In web pages the g
 
 Consequently, you can access global variables declared in one window or frame from another window or frame by specifying the window or frame name. For example, if a variable called phoneNumber is declared in a document, you can refer to this variable from an iframe as parent.phoneNumber.
 
-<section id="Constants" >
-    <h2>Constants</h2>
-    You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is the same as for a variable identifier: it must start with a letter, underscore or dollar sign and can contain alphabetic, numeric, or underscore characters.
-    
-    const PI = 3.14;
-    A constant cannot change value through assignment or be re-declared while the script is running. It has to be initialized to a value.
-    
-    The scope rules for constants are the same as those for let block scope variables. If the const keyword is omitted, the identifier is assumed to represent a variable.
-    
-    You cannot declare a constant with the same name as a function or variable in the same scope. For example:
-    
-    // THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS
-    WILL CAUSE AN ERROR ALSO function f() { const g = 5; var g;
-    //statements }
-    However, object attributes are not protected, so the following statement is executed without problems.
-    const MY_OBJECT = {"key": "value"}; MY_OBJECT.key =
-    "otherValue";
-</section>
+    <section id="Constants" >
+        <h2>Constants</h2>
+        You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is the same as for a variable identifier: it must start with a letter, underscore or dollar sign and can contain alphabetic, numeric, or underscore characters.
+        
+        const PI = 3.14;
+        A constant cannot change value through assignment or be re-declared while the script is running. It has to be initialized to a value.
+        
+        The scope rules for constants are the same as those for let block scope variables. If the const keyword is omitted, the identifier is assumed to represent a variable.
+        
+        You cannot declare a constant with the same name as a function or variable in the same scope. For example:
+        
+        // THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS
+        WILL CAUSE AN ERROR ALSO function f() { const g = 5; var g;
+        //statements }
+        However, object attributes are not protected, so the following statement is executed without problems.
+        const MY_OBJECT = {"key": "value"}; MY_OBJECT.key =
+        "otherValue";
+    </section>
 
 Data types
 The latest ECMAScript standard defines seven data types:
