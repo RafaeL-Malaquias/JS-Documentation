@@ -6,6 +6,20 @@
     <title>JavaScript Documentation</title>
 </head>
 <body>
+    <nav>
+        <h1>JS Documentation</h1>
+        <ul>
+            <li><a href="#">Introduction</a></li>
+            <li><a href="#">What you should already know</a></li>
+            <li><a href="#JavaScript and Java">JavaScript and Java</a></li>
+            <li><a href="#Hello world">Hello world</a></li>
+            <li><a href="#Variables">Variables</a></li>
+            <li><a href="#Declaring variables">Declaring variables</a></li>
+            <li><a href="#Variable scope">Variable scope</a></li>
+            <li><a href="#Global variables">Global variables</a></li>
+            <li><a href="#Constants">Constants</a></li>
+        </ul>
+    </nav>
     Introduction
 JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.
 
@@ -19,18 +33,21 @@ This guide assumes you have the following basic background:
 A general understanding of the Internet and the World Wide Web (WWW).
 Good working knowledge of HyperText Markup Language (HTML).
 Some programming experience. If you are new to programming, try one of the tutorials linked on the main page about JavaScript.
-JavaScript and Java
-JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows most Java expression syntax, naming conventions and basic control-flow constructs which was the reason why it was renamed from LiveScript to JavaScript.
+teste
+    <section  id="JavaScript and Java">
+        <h2>JavaScript and Java</h2>
+        JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows most Java expression syntax, naming conventions and basic control-flow constructs which was the reason why it was renamed from LiveScript to JavaScript.
+        In contrast to Java's compile-time system of classes built by declarations, JavaScript supports a runtime system based on a small number of data types representing numeric, Boolean, and string values. JavaScript has a prototype-based object model instead of the more common class-based object model. The prototype-based model provides dynamic inheritance; that is, what is inherited can vary for individual objects. JavaScript also supports functions without any special declarative requirements. Functions can be properties of objects, executing as loosely typed methods.
+        JavaScript is a very free-form language compared to Java. You do not have to declare all variables, classes, and methods. You do not have to be concerned with whether methods are public, private, or protected, and you do not have to implement interfaces. Variables, parameters, and function return types are not explicitly typed.
+    </section>
 
-In contrast to Java's compile-time system of classes built by declarations, JavaScript supports a runtime system based on a small number of data types representing numeric, Boolean, and string values. JavaScript has a prototype-based object model instead of the more common class-based object model. The prototype-based model provides dynamic inheritance; that is, what is inherited can vary for individual objects. JavaScript also supports functions without any special declarative requirements. Functions can be properties of objects, executing as loosely typed methods.
-
-JavaScript is a very free-form language compared to Java. You do not have to declare all variables, classes, and methods. You do not have to be concerned with whether methods are public, private, or protected, and you do not have to implement interfaces. Variables, parameters, and function return types are not explicitly typed.
-
-Hello world
-To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:
-function greetMe(yourName) { alert("Hello " + yourName); }
-greetMe("World");
-Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!
+    <section>
+        <h2 id="Hello world">Hello world</h2>
+        To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:
+        function greetMe(yourName) { alert("Hello " + yourName); }
+        greetMe("World");
+        Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!
+    </section>
 Variables
 You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.
 
@@ -67,22 +84,25 @@ Global variables are in fact properties of the global object. In web pages the g
 
 Consequently, you can access global variables declared in one window or frame from another window or frame by specifying the window or frame name. For example, if a variable called phoneNumber is declared in a document, you can refer to this variable from an iframe as parent.phoneNumber.
 
-Constants
-You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is the same as for a variable identifier: it must start with a letter, underscore or dollar sign and can contain alphabetic, numeric, or underscore characters.
+<section id="Constants" >
+    <h2>Constants</h2>
+    You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is the same as for a variable identifier: it must start with a letter, underscore or dollar sign and can contain alphabetic, numeric, or underscore characters.
+    
+    const PI = 3.14;
+    A constant cannot change value through assignment or be re-declared while the script is running. It has to be initialized to a value.
+    
+    The scope rules for constants are the same as those for let block scope variables. If the const keyword is omitted, the identifier is assumed to represent a variable.
+    
+    You cannot declare a constant with the same name as a function or variable in the same scope. For example:
+    
+    // THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS
+    WILL CAUSE AN ERROR ALSO function f() { const g = 5; var g;
+    //statements }
+    However, object attributes are not protected, so the following statement is executed without problems.
+    const MY_OBJECT = {"key": "value"}; MY_OBJECT.key =
+    "otherValue";
+</section>
 
-const PI = 3.14;
-A constant cannot change value through assignment or be re-declared while the script is running. It has to be initialized to a value.
-
-The scope rules for constants are the same as those for let block scope variables. If the const keyword is omitted, the identifier is assumed to represent a variable.
-
-You cannot declare a constant with the same name as a function or variable in the same scope. For example:
-
-// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS
-WILL CAUSE AN ERROR ALSO function f() { const g = 5; var g;
-//statements }
-However, object attributes are not protected, so the following statement is executed without problems.
-const MY_OBJECT = {"key": "value"}; MY_OBJECT.key =
-"otherValue";
 Data types
 The latest ECMAScript standard defines seven data types:
 
