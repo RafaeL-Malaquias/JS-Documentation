@@ -5,11 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="">
     <title>JavaScript Documentation</title>
+    <style>
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        nav ul  {
+        }
+        #main-doc{
+            position: relative;
+            margin-left: 200px;
+        }
+    </style>
 </head>
 <body>
     <!-- Add snake_case nas ID, se tiver 2 palavras com espaço o navegador entenderá será doi id-#-->
     <main id="main-doc">
-    <nav>
+    <nav id="navbar">
         <h1>JS Documentation</h1>
             <ul>
                 <li><a href="#Introduction">Introduction</a></li>
@@ -66,7 +79,7 @@
                     </p>
             </section>
 
-            <section  class="main-section" id="Hello world">
+            <section  class="main-section" id="Hello_world">
                 <header>Hello world</header>
                     <p>
                         To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:
@@ -233,7 +246,7 @@
                                 }
                         </code>
                 </section>
-                <section class="main-section" id="while statement">
+                <section class="main-section" id="while_statement">
                     <header>while statement</header>
                         <p>
                             A while statement executes its statements as long as a specified condition evaluates to true. A while statement looks as follows:
@@ -271,7 +284,7 @@
                     
                 </section>
 
-                <section class="main-section" id="Function declarations">
+                <section class="main-section" id="Function_declarations">
                     <header>Function declarations</header>
                     <p>
                         A function definition (also called a function declaration, or function statement) consists of the function keyword, followed by:
