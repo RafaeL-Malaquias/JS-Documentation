@@ -124,3 +124,16 @@ code {
         transform: translateX(var(--startX));
     }
 }
+
+
+
+#main-doc {
+    --downY:-100%;
+    animation: baixar 0.9s;
+}
+
+@keyframes  baixar {
+    0% {
+        transform: translateY(var(--downY));        
+    }
+}
