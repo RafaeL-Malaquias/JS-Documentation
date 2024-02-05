@@ -81,24 +81,35 @@ code {
 
 
 @media (max-width:800px) {
-    #navbar{
+    #navbar {
+        position: absolute;
         width: 100%;
+        max-height: 275px;
         top: 0;
-        padding: 0;
         margin: 0;
-        max-height: 300px;
+        padding: 0;
         border: none;
         z-index: 1;
-        border-bottom: 1px solid;
+        
+    }
+    #navbar ul {
+        border: 1px solid;
+        height: 207px;
     }
     #main-doc {
-        position: relative;
         margin-left: 0;
         margin-top: 310px;
-        padding: 20px;
+        margin-left: 0;
 
-
-    }    
+    } 
+    code {
+        margin-left: -20px;
+        width: 100%;
+        padding: 15px;
+        padding-left: 10px;
+        padding-right: 45px;
+        min-width: 233px;
+    }
 }
 
 /* animation */
@@ -106,4 +117,10 @@ code {
 #navbar {
     --startX: -100%; 
     animation: move 0.9s;   
+}
+
+@keyframes move {
+    from {
+        transform: translateX(var(--startX));
+    }
 }
