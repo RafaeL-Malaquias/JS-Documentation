@@ -6,10 +6,12 @@
     </p>
 <br>
 <p align="center">
-<img  width="250" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="freeCodeCamp Logo">
+<a href="https://www.freecodecamp.org/portuguese/learn">
+<img  width="300" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="freeCodeCamp Logo"></a>
 </p>
+
 <h2 align="center">
-Curso Design responsivo para a web
+    Curso Design responsivo para a web
 </h2>
 
 <p align="center">
