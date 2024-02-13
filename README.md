@@ -4,12 +4,13 @@
         <img height="500em" src="assets//Screenshot_1.jpg">
         </a>
     </p>
-
+<br>
 <p align="center">
-    <img height="100em" width="250" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="freeCodeCamp Logo">
-
-    Curso Design responsivo para a web
+<img  width="250" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="freeCodeCamp Logo">
 </p>
+<h2 align="center">
+Curso Design responsivo para a web
+</h2>
 
 <p align="center">
     <a href="#🚀-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
