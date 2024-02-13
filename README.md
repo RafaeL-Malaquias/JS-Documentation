@@ -1,12 +1,14 @@
 <h1 align="center">JS Documentation</h1>
     <p align="center">
-        <a href="#💻-projeto">
-        <img height="470em" src="assets//Screenshot_1.jpg">
+        <a href="assets/Screenshot_2.jpg">
+        <img height="500em" src="assets//Screenshot_1.jpg">
         </a>
     </p>
 
 <p align="center">
-    Curso gratuito, promovido pela FreeCodeCamp para ensino de tecnologias WEB.
+    <img height="100em" width="250" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="freeCodeCamp Logo">
+
+    Curso Design responsivo para a web
 </p>
 
 <p align="center">
@@ -32,7 +34,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - Git e Github
 
 ## 💻 Projeto
-Página de documentação técnica, este é um dos projetos necessários para obter sua certificação.
+Página de documentação técnica. <br> este é um dos projetos necessários para obter sua certificação.
 <br>
 Para este projeto, crie uma página de documentação técnica para servir como instrução ou referência para um tópico.
 
