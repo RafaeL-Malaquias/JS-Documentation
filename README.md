@@ -1,7 +1,7 @@
 <h1 align="center">JS Documentation</h1>
     <p align="center">
-        <a href="https://rafael-malaquias.github.io/Projeto-Discover/">
-        <img height="470em" src="assets/Screenshot.png">
+        <a href="#💻-projeto">
+        <img height="470em" src="assets//Screenshot_1.jpg">
         </a>
     </p>
 
