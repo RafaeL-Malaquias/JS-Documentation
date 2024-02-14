@@ -41,7 +41,7 @@ Página de documentação técnica. <br> este é um dos projetos necessários pa
 <br>
 Para este projeto, crie uma página de documentação técnica para servir como instrução ou referência para um tópico.
 
-[Link](https://www.freecodecamp.org/portuguese/learn/2022/responsive-web-design/build-a-technical-documentation-page-project/build-a-technical-documentation-page) - Para visualizar o projeto.
+[Link](https://rafael-malaquias.github.io/JS-Documentation/#Hello_world) - Para visualizar o projeto.
 
 ## 🔖 Layout
 
